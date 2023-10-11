@@ -1,0 +1,22 @@
+#!/bin/python3
+name = "SAMUEL"
+print(name[0])
+print(name[1])
+print(name[5])
+
+print(name[3])
+print(name[2])
+print(name[4])
+
+
+#[start: stop : stepover]
+print("#[start: stop : stepover]")
+print(name[::1])
+print(name[::-1])
+print(name[-3])
+
+print("length of the string");
+print("length count like humans")
+greet = "Morning"
+print(len(greet))
+

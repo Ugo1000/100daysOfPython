@@ -1,0 +1,21 @@
+#!/bin/python3
+#booleans
+
+name = "samuel"
+
+isCool = False
+
+isCool = True
+
+print(bool(0))
+print(bool(1))
+# birth check 
+
+birth_year = (input("what year were you borni ? "))
+
+age = (int(birth_year))
+current_year = 2023
+dob = current_year - age;
+print(f"you are {dob} years old")
+
+

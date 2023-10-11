@@ -1,0 +1,26 @@
+class Student:
+    # class object attribute
+    is_a_student = True
+
+    def __init__(self, name, age):  # this is a constructor same way you give constructor in java
+
+        if (Student.is_a_student):
+            self.name = name  # self is the same as this.name in java
+            self.age = int(age)
+
+    @classmethod  # decorator
+    def add(cls, num1, num2):
+        return cls("Tedd1y ", num1 + num2)
+
+    def run(self):
+        return ("Runnnig..")
+
+    def shout(self):
+        return (f"my name is {self.name}, i just shouted ")
+
+
+# student = Student("Nelly", 26)
+student3 = Student.add(3,5)
+print(student3.name)
+print(student3.age)
+# print(Student.add(2, 7))
