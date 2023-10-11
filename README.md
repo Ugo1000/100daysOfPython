@@ -1,2 +1,2 @@
-# 100daysOfPython
+# 100DaysOfPython
 LEARN A CONCEPT EVERYDAY.
