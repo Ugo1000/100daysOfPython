@@ -1,3 +1,4 @@
+#!/bin/usr/python3
 from random import randint
 
 
@@ -6,7 +7,7 @@ answer = randint(1, 10)
 print(answer)
 
 
-def my_guess(guess):
+def my_guess(guess, answer, name):
     if 0 < guess >= 11:
         print("Value must be between 1~10")
     if guess == answer:
@@ -16,15 +17,17 @@ def my_guess(guess):
         return False
 
 
-# use exception
-while True:
-    try:
-        # input from user
-        guess = int(input("What's your guess 1~10 : "))
-        # check the input is number 1~10
-        if my_guess(guess):
-            break
+if __name__ == "__main__":
 
-    except ValueError:
-        print("Must be Number 1~10")
-        continue
+    # use exception
+    while True:
+        try:
+            # input from user
+            guess = int(input("What's your guess 1~10 : "))
+            # check the input is number 1~10
+            if my_guess(guess, answer, name):
+                break
+
+        except ValueError:
+            print("Must be Number 1~10")
+            continue
