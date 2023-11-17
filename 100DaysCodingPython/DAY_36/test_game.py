@@ -1,6 +1,6 @@
 '''This module test the random game '''
 import unittest
-import main
+import myGame
 
 
 
