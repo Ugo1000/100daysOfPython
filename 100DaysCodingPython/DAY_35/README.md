@@ -1,0 +1,1 @@
+# Testing is the method in software development where individual unit is tested such as funtions and others to know if they work properly.
