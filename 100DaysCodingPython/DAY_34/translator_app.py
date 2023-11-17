@@ -12,8 +12,7 @@ print(f"Detected language: {detected_language}")
 
 # Translate the text to another language
 target_language = 'fr'  # Spanish in this case
-translated_text = translator.translate(
-    text_to_translate, dest=target_language).text
+translated_text = translator.translate(text_to_translate, dest=target_language).text
 
 # Print the translated text
 print(f"Translated text: {translated_text}")
