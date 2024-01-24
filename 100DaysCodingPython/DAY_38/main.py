@@ -8,20 +8,22 @@
 
 
 def my_decorator(func):
-    def wrap_func():
+    def wrap_func(*agrs):
         print("*****before*****")
-        func()
+        func(agrs)
         print("*****after*****")
     return wrap_func
 
 
 @my_decorator
-def greet():
-    print("HEllooo..")
+def greet(name):
+    return f"HELLO {name}"
+
 
 def main():
-    greet()
-    
+    data = greet("SAMUEL")
+    print(data)
+
 
 if __name__ == '__main__':
     main()

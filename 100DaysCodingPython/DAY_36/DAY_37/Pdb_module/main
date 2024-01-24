@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+
+import pdb
+
+
+def my_funtion(a,b):
+    pdb.set_trace()
+    return a + b
+
+
+myf = my_funtion(8,"samuel")
+print(myf)

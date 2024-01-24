@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+
+# print(list(range(200,300)))
+
+# Iterate
+# Generator
+
+def my_gene(num):
+    for i in range(num):
+        return i * 2
+
+
+g = my_gene(20)
+print(g)
+# print(next(g)
+# print(next(g))
+# print(next(g))
+# print(next(g))

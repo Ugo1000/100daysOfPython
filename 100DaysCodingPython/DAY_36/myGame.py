@@ -1,10 +1,20 @@
 #!/bin/usr/python3
 from random import randint
 
-
+# takes the name of the player
 name = input("Enter your name : ")
 answer = randint(1, 10)
 print(answer)
+
+'''       
+    This fuction takes
+    param 1 : guess
+    param 2 : answer
+    param 3 : name
+
+    retun the guess if it's equal answer
+
+'''
 
 
 def my_guess(guess, answer, name):
