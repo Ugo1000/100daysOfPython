@@ -4,7 +4,7 @@ from random import randint
 # takes the name of the player
 name = input("Enter your name : ")
 answer = randint(1, 10)
-print(answer)
+# print(answer)
 
 '''       
     This fuction takes

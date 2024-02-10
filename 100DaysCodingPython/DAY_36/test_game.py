@@ -4,6 +4,7 @@ import unittest
 
 
 class Test_Game(unittest.TestCase):
+    
     def test_correct_guess(self):
         """Correct guess"""
         answer = 5
