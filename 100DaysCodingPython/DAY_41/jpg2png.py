@@ -16,11 +16,20 @@ if not mypath.exists():
     mypath.mkdir(parents=True)
 
 # Loop through my_picture folder
-pic_folder = Path(str_output_folder)
+pic_folder = Path(str_pic_folder)
 
 for out_file in pic_folder.iterdir():
-    img = Image.open(f"{pic_folder}, {out_file}")
-    print(img)
+    # check if it's a file
+    if out_file.is_file():
+
+        # Open image
+        img = Image.open(out_file)
+        # Define output file path
+        out_file_path = mypath / (out_file.stem + ".png")
+
+        # Save image to output folder
+        img.save(out_file_path)
+        img.show()
 
 
 # Convert images to png

@@ -4,7 +4,6 @@ img = Image.open('./DAY_41/shot.png')
 
 # filterImage = img.filter(ImageFilter.BLUR)
 
-
 filterImage = img.convert('L')
 
 filterImage.save("b.png","png")

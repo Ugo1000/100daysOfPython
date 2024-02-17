@@ -1,0 +1,7 @@
+{
+  "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "*_test.py"],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true,
+  "cSpell.words": ["mypath"],
+  "cmake.configureOnOpen": false
+}
